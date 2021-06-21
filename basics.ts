@@ -47,3 +47,8 @@ myObjectArr = [
 // Type inference 
 let myInferredString = 'Hello there! I am am inferred String by default, no need the type';
 
+
+// to define 2 or more types we use union types '|'.
+let myUnionType: string | number = 'Hello there! I am am inferred String by default, no need the type';
+
+myUnionType = 6;
