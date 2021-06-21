@@ -22,20 +22,25 @@ let myStrArr: string[];
 
 myStrArr = ["name", "hell"];
 
-let myPersonObj: {
-  name: string;
-  age: number;
-};
+// Type Alias
+type Person = {
+    name: string;
+    age: number;
+  };
+
+let myPersonObj: Person;
 
 myPersonObj = {
   name: "Gaurav",
   age: 4,
 };
 
-let myObjectArr: {
-  name: string;
-  age: number;
-}[];
+// let myObjectArr: {
+//   name: string;
+//   age: number;
+// }[];
+
+let myObjectArr: Person[];
 
 myObjectArr = [
   {
