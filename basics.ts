@@ -43,3 +43,7 @@ myObjectArr = [
     age: 4,
   },
 ];
+
+// Type inference 
+let myInferredString = 'Hello there! I am am inferred String by default, no need the type';
+
