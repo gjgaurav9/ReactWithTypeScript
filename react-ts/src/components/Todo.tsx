@@ -1,14 +1,9 @@
 import React from "react";
-import Todo from "../models/Todo";
 
-const TodoList: React.FC<{ items: Todo[] }> = (props) => {
-  return (
-    <ul>
-      {props.items.map((item) => (
-        <li key={item.id}>{item.text}</li>
-      ))}
-    </ul>
-  );
-};
+const Todo : React.FC<{itemText: string, key: string}> = (props) => {
+    return(
+        <li key={props.key}>{props.itemText}</li>
+    )
+}
 
-export default TodoList;
+export default Todo;
