@@ -1,7 +1,17 @@
-import Todo from "./components/Todo";
+import TodoList from "./components/Todo";
+import Todo from "./models/Todo";
 
 function App() {
-  return <div><Todo items={['Learn Everything','Learn Something','Learn more...']}/></div>;
+  const todoList = [
+    new Todo("Learn Java"),
+    new Todo("Learn JavaScript"),
+    new Todo("Learn more.."),
+  ];
+  return (
+    <div>
+      <TodoList items={todoList} />
+    </div>
+  );
 }
 
 export default App;
