@@ -17,10 +17,14 @@ function App() {
     setTodoList((previousTodo) => previousTodo.concat(newTodoObj));
   };
 
+  const deleteTodo = (key: string) => {
+    setTodoList(todoList.filter((todo) => todo.id !== key));
+  };
+
   return (
     <div>
-      <NewTodo addTodo ={addTodoHandler} />
-      <TodoList items={todoList} />
+      <NewTodo addTodo={addTodoHandler} />
+      <TodoList items={todoList} onClickHandler={deleteTodo} />
     </div>
   );
 }
